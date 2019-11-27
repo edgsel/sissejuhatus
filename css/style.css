@@ -7,7 +7,6 @@
 ul {
     list-style-type: none;
     overflow: hidden;
-    /*background-color: #ffffff;*/
     width: 100%;
 }
 
@@ -25,6 +24,7 @@ li a {
 
 li a:hover {
     background-color: #111;
+    color: #ffffff;
 }
 
 #main-container {
@@ -39,14 +39,21 @@ li a:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 300px;
 }
 
 .grid-container .greeting {
     font-size: 5rem;
     text-align: center;
-    min-width: 600px;
+    /*min-width: 600px;*/
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.grid-container .flex-container {
+    display: flex;
 }
