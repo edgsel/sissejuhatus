@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap);
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #fffff;
@@ -73,9 +73,12 @@ input:hover::placeholder, textarea:hover::placeholder {
 input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
+* {
+	font-family: 'Sulphur Point', sans-serif;
+}
 
 body {
-  font-family: 'Lato', sans-serif;
+
   background: #fffff;
   color: #000;
 }
@@ -95,7 +98,6 @@ header {
 }
 
 input {
-  font-family: 'Lato', sans-serif;
   font-size: 0.875em;
   width: 470px;
   height: 50px;
@@ -130,7 +132,6 @@ textarea {
   outline: none;
   
   color: #726659;
-  font-family: 'Lato', sans-serif;
   font-size: 0.875em;
   
   border: solid 1px #000;
