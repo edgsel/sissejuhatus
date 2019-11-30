@@ -2,14 +2,13 @@
     font-family: 'Sulphur Point', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /*margin: 0;*/
     padding: 0;
     box-sizing: border-box;
     color: #777;
 }
 
 body {
-    margin-top: 0;
+    margin: 0;
     overflow-x:hidden;
 }
 
@@ -17,6 +16,10 @@ body {
     position: absolute;
     list-style-type: none;
     overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    float: right;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -24,7 +27,7 @@ body {
 }
 
 .navbar li {
-    float: right;
+    font-size: 1.5vw;
 }
 
 .navbar li a {
@@ -33,7 +36,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 3vh;
+    /*font-size: 3vh;*/
 }
 
 .navbar li a:hover {
@@ -49,23 +52,25 @@ body {
 }
 
 .grid-container {
-    overflow: auto;
     display: grid;
     position: relative;
     grid-template-rows: 1fr;
     width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    border: 1px solid black;
+    min-height: 100vh;
+    align-items: start;
+    /*max-height: max-content;*/
+    /*border: 1px solid black;*/
 }
 
-.grid-container .greeting {
+.greeting {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #000;
-    font-size: 8.5vh;
+    font-size: 8vh;
+    top: 40%;
 }
 
 .hint-to-scroll-down {
@@ -77,7 +82,7 @@ body {
 .page-header {
     display: flex;
     position: relative;
-    font-size: 6vh;
+    font-size: 8vh;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -133,6 +138,31 @@ h2 {
     padding: 5px;
 }
 
+.footer {
+    display: grid;
+    /*background-color: black;*/
+    position: relative;
+    margin-top: 5px;
+    /*border: 1px solid black;*/
+}
+
+.socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+    padding: 0 5px 0 5px;
+}
+
+.socials > a .small-logos {
+    height: 5vh;
+    padding: 0 5px 0 5px;
+}
+
 .arrow {
     position: relative;
     bottom: 3.5rem;
@@ -162,7 +192,35 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+
     .arrow {
-        margin-left: 0;
+        margin-left: -10px;
+        width: 20px;
+        height: 30px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar li {
+        font-size: 18px;
+    }
+
+    .greeting {
+        font-size: 5.5vh;
+    }
+
+    .hint-to-scroll-down {
+        font-size: 3vh;
+    }
+
+    .page-header {
+        font-size: 6vh;
     }
 }
