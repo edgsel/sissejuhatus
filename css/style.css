@@ -61,6 +61,12 @@ body {
     align-items: start;
 }
 
+.contact {
+  position: relative;
+  display:grid;
+
+  border: 1px solid black;
+}
 .greeting {
     display: flex;
     position: relative;
@@ -70,6 +76,9 @@ body {
     color: #000;
     font-size: 8vh;
     top: 40%;
+}
+.contact-header{
+  padding-top: 40px
 }
 
 .hint-to-scroll-down {
@@ -99,6 +108,16 @@ body {
     width: 60%;
 }
 
+.aligned {
+  /* top: 40%; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
 .grid-cards-container > article {
     border-radius: 10px;
 }
@@ -126,6 +145,19 @@ article:hover {
 .text {
     padding: 0 20px 20px;
     align-items: stretch;
+}
+
+.contact-text {
+    padding: 0 20px 20px;
+    font-size: 4vh;
+    align-items: stretch;
+}
+
+.googlemaps {
+  position: relative;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
 }
 
 h2 {

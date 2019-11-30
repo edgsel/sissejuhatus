@@ -2,50 +2,52 @@
 <html>
 
   <head>
-    <style>
-    .split {
-      height: 100%;
-      width: 50%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
-
-    .left {
-      left: 0;
-    }
-
-    .right {
-      right: 0;
-    }
-
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    .centered img {
-      border-radius: 18px;
-      color: white;
-      box-shadow:1px 1px 10px gray;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Contact information</title>
   </head>
 
 <body>
-  <h2>*LOGO and SHAPKA HERE*</h2>
-  <h1> Contact us </h1>
 
-
-
-  <div class="split left">
-    <div class="centered">
+  <ul class="navbar">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+  </ul>
+  <div id="main-container">
+    <div class="grid-container">
+      <div>
+        <div class="contact-header">
+          <h1 class="page-header">How you can contact us?</h1>
+        </div>
+          <div class="grid-cards-container aligned">
+              <article>
+                  <h2>Contact info</h2>
+                  <div class="contact-text">
+                      <p>Call us: 8800 555 35 35 <br>
+                        OR <br>
+                        Visite our headquarter: Lai 34, Tartu, 51014 <br>
+                        We are open: <br>
+                        E – R: 9 – 18 <br>
+                        L: 10 – 16 (ainult hooajal) <br>
+                        P: SULETUD
+                      </p>
+                  </div>
+              </article>
+              <article>
+                  <h2>Map</h2>
+                  <div class="googlemaps">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.8944065280986!2d26.719263629266894!3d58.38365979883361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36e683e1c241%3A0xeadc11be989d1c0a!2sLai%2034%2C%2051005%20Tartu!5e0!3m2!1sru!2see!4v1574879711207!5m2!1sru!2see" width="200" height="200" frameborder="1" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+              </article>
+            </div>
+          </div>
+    </div>
+  </div>
+  <!-- <h1 class="page-header">Contact us</h1>
       <p>Call us: 8800 555 35 35</p>
       <p>OR</p>
       <p>Visite our headquarter: Lai 34, Tartu, 51014</p>
@@ -54,17 +56,13 @@
       <p>L: 10 – 16 (ainult hooajal) </p>
       <p>P: SULETUD</p>
 
-    </div>
-  </div>
 
-  <div class="split right">
-    <div class="centered">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.8944065280986!2d26.719263629266894!3d58.38365979883361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36e683e1c241%3A0xeadc11be989d1c0a!2sLai%2034%2C%2051005%20Tartu!5e0!3m2!1sru!2see!4v1574879711207!5m2!1sru!2see" width="400" height="350" frameborder="2" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-  </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.8944065280986!2d26.719263629266894!3d58.38365979883361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36e683e1c241%3A0xeadc11be989d1c0a!2sLai%2034%2C%2051005%20Tartu!5e0!3m2!1sru!2see!4v1574879711207!5m2!1sru!2see" width="400" height="350" frameborder="1" style="border:0;" allowfullscreen=""></iframe>
 
 
 
+ -->
 
 </body>
 </html>
