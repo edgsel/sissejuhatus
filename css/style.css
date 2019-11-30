@@ -106,8 +106,8 @@ body {
     top: 40%;
 }
 
-.contact-header{
-  padding-top: 15px;
+.contact-header {
+  padding-top: 20px;
 }
 
 .hint-to-scroll-down {
@@ -459,7 +459,7 @@ textarea:hover {
         font-size: 20px;
     }
 
-   .aligned {
+   .form {
        margin-right: 10%;
    }
 
