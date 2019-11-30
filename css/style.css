@@ -4,12 +4,12 @@
     -moz-osx-font-smoothing: grayscale;
     padding: 0;
     box-sizing: border-box;
-    color: #777;
+    /*color: #777;*/
 }
 
 body {
     margin: 0;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -19,7 +19,6 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    float: right;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -39,13 +38,12 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    /*font-size: 3vh;*/
 }
 
 .navbar li a:hover {
     background-color: #111;
     color: #ffffff;
-    box-shadow: 1px 1px 1px 0px  rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 1px 0  rgba(0,0,0,0.3);
     transition: 0.5s;
 }
 
@@ -61,8 +59,6 @@ body {
     width: 100vw;
     min-height: 100vh;
     align-items: start;
-    /*max-height: max-content;*/
-    /*border: 1px solid black;*/
 }
 
 .greeting {
@@ -143,10 +139,8 @@ h2 {
 
 .footer {
     display: grid;
-    /*background-color: black;*/
     position: relative;
     margin-top: 5px;
-    /*border: 1px solid black;*/
 }
 
 .socials {
@@ -154,7 +148,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     height: 10vh;
