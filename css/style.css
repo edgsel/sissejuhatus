@@ -26,6 +26,9 @@ body {
     margin: 0
 }
 
+.active {
+    border-bottom: 1px solid black;
+}
 .navbar li {
     font-size: 1.5vw;
 }
@@ -97,7 +100,7 @@ body {
     align-items: stretch;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 60%;
 }
 
 .grid-cards-container > article {
@@ -199,6 +202,9 @@ h2 {
         height: 30px;
     }
 
+    .grid-cards-container {
+        width: 90%;
+    }
     body {
         overflow-x: hidden;
     }
