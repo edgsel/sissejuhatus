@@ -4,7 +4,6 @@
     -moz-osx-font-smoothing: grayscale;
     padding: 0;
     box-sizing: border-box;
-    /*color: #777;*/
 }
 
 body {
@@ -72,6 +71,7 @@ body {
 .regbar li a:hover {
     background-color: #111;
     color: #ffffff;
+    transition: 0.5s;
 }
 
 #main-container {
@@ -86,14 +86,15 @@ body {
     width: 100vw;
     min-height: 100vh;
     align-items: start;
+    /*border: 1px solid black;*/
 }
 
 .contact {
   position: relative;
   display:grid;
-
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
+
 .greeting {
     display: flex;
     position: relative;
@@ -104,8 +105,9 @@ body {
     font-size: 8vh;
     top: 40%;
 }
+
 .contact-header{
-  padding-top: 40px
+  padding-top: 15px;
 }
 
 .hint-to-scroll-down {
@@ -117,7 +119,7 @@ body {
 .page-header {
     display: flex;
     position: relative;
-    font-size: 8vh;
+    font-size: 7vh;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -133,21 +135,21 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    /*border: 1px solid black;*/
 }
 
 .aligned {
-  /* top: 40%; */
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  max-width: 60%;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+    justify-content: center;
+    width: 40%;
 }
 
 .grid-cards-container > article {
     border-radius: 10px;
 }
+
+/*article {*/
+/*    border: 1px solid black;*/
+/*}*/
 
 article:hover {
     box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.3);
@@ -164,8 +166,6 @@ article:hover {
 }
 
 .filtered {
-    /*filter: grayscale(100%) invert(1);*/
-    /*background-color: #111111;*/
     filter: opacity(1) drop-shadow(0 0 0 black) grayscale(100%);
 }
 
@@ -176,15 +176,28 @@ article:hover {
 
 .contact-text {
     padding: 0 20px 20px;
-    font-size: 4vh;
+    font-size: 3vh;
     align-items: stretch;
+    text-align: left;
 }
 
 .googlemaps {
-  position: relative;
-  top: 40%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+    position: relative;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.googlemaps iframe {
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
 }
 
 h2 {
@@ -247,6 +260,149 @@ h2 {
     }
 }
 
+/* Submission form */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #111111;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #111111;
+    font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #111111;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #111111;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+    color: #111111;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #111111;
+    font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #111111;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #ffffff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #ffffff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #ffffff;
+}
+
+#form {
+    position: relative;
+    width: 45vw;
+    margin: 50px auto 100px auto;
+}
+
+input {
+    font-size: 0.875em;
+    width: 40vw;
+    height: 10vh;
+    padding: 0 15px 0 15px;
+    background: transparent;
+    outline: none;
+    color: #111111;
+    border: solid 1px #000;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+input[placeholder] {
+    font-size: 1.5vw;
+}
+
+textarea {
+    width: 40vw;
+    height: 30vh;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    font-size: 1.5vw;
+    border: solid 1px #000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #000;
+    color: white;
+}
+
+#submit {
+    width: 40vw;
+    padding: 0;
+    margin: -5px 0 0 0;
+    font-size: 1.5vw;
+    color: #111111;
+    outline:none;
+    cursor: pointer;
+    border: solid 1px #000;
+    border-top: none;
+}
+
+#submit:hover {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
 
     .arrow {
@@ -258,17 +414,24 @@ h2 {
     .grid-cards-container {
         width: 90%;
     }
+
     body {
         overflow-x: hidden;
     }
+
     .navbar {
         margin-right: auto;
         margin-left: auto;
         align-items: center;
         justify-content: center;
     }
+
     .navbar li {
         font-size: 18px;
+    }
+
+    .regbar li a {
+        font-size: 23px;
     }
 
     .greeting {
@@ -281,5 +444,26 @@ h2 {
 
     .page-header {
         font-size: 6vh;
+    }
+
+    .contact-text {
+        font-size: 2.5vh;
+    }
+
+    .contact-header{
+        padding-top: 40px;
+    }
+
+    #submit, textarea, input {
+        width: 60vw;
+        font-size: 20px;
+    }
+
+   .aligned {
+       margin-right: 10%;
+   }
+
+    input[placeholder] {
+        font-size: 20px;
     }
 }

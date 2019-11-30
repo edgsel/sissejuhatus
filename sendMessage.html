@@ -2,20 +2,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="sendMessage.css">
-    <!-- CSS/Javascript links and Meta tags go here -->
-    <title>Title of page</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <title>Send us a message</title>
   </head>
   <body>
-	<header>CONTACT US</header>
+  <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+      <li ><a href="#about">About</a></li>
+  </ul>
 
-	<form id="form" class="topBefore">	
-		<input id="name" type="text" placeholder="NAME">
-		<input id="email" type="text" placeholder="E-MAIL">
-		<textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-		<input id="submit" type="submit" value="SEND">
-	</form>	
-    <!-- Content, text, images go here -->
+    <div id="main-container">
+        <div class="grid-container">
+            <div>
+                <div class="contact-header">
+                    <h1 class="page-header">Send us a message</h1>
+                </div>
+                <div class="grid-cards-container aligned">
+
+                    <form id="form" class="topBefore">
+                        <input id="name" type="text" placeholder="NAME">
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="footer">
+      <div class="socials">
+          <a href="https://github.com" target="_blank" ><img class="small-logos" src="./images/github.png" alt="github"></a>
+          <a href="https://twitter.com" target="_blank" ><img class="small-logos" src="./images/twitter.png" alt="twitter"></a>
+          <a href="https://linkedin.com" target="_blank" ><img class="small-logos" src="./images/linkedin.png" alt="linkedin"></a>
+          <a href="https://fb.com" target="_blank" ><img class="small-logos" src="./images/fb.png" alt="fb"></a>
+      </div>
+  </div>
   </body>
 </html>
