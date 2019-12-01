@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" href="./images/staricon.png">
     <title>Welcome</title>
 </head>
 <body>
@@ -15,14 +18,20 @@
     </ul>
     <div id="main-container">
         <div class="grid-container">
-            <h1 class="greeting">Welcome, %username%</h1>
+<!--            <h1 class="greeting">Welcome, %username%</h1>-->
+            <h1 class="greeting">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">Welcome, %username%</span>
+              </span>
+            </h1>
             <p class="hint-to-scroll-down">Scroll down for more</p>
             <div class="arrow bounce"></div>
         </div>
         <div class="grid-container">
             <div>
                 <h1 class="page-header">What we do?</h1>
-                <div class="grid-cards-container">
+                <div class="grid-cards-container hideme">
                     <article>
                         <h2>UI/UX</h2>
                         <img src="./images/ui_logo.png" alt="ui">
@@ -79,7 +88,7 @@
                 <div class="contact-header">
                     <h1 class="page-header">Why Us</h1>
                 </div>
-                <div class="grid-cards-container">
+                <div class="grid-cards-container hideme">
                     <article>
                         <h2>Reliable</h2>
                         <img class="filtered" src="./images/reliable.png" alt="reliability">
@@ -134,11 +143,13 @@
     </div>
     <div class="footer">
         <div class="socials">
-            <a href="https://github.com" target="_blank" ><img class="small-logos" src="./images/github.png" alt="github"></a>
+            <a href="https://github.com/edgsel/sissejuhatus" target="_blank" ><img class="small-logos" src="./images/github.png" alt="github"></a>
             <a href="https://twitter.com" target="_blank" ><img class="small-logos" src="./images/twitter.png" alt="twitter"></a>
             <a href="https://linkedin.com" target="_blank" ><img class="small-logos" src="./images/linkedin.png" alt="linkedin"></a>
             <a href="https://fb.com" target="_blank" ><img class="small-logos" src="./images/fb.png" alt="fb"></a>
         </div>
     </div>
+    <script src="./script/animetedGreeting.js"></script>
+    <script src="./script/fadeIn.js"></script>
 </body>
 </html>
