@@ -109,7 +109,7 @@ body {
     align-items: center;
     text-align: center;
     color: #000;
-    font-size: 8vh;
+    font-size: 7vh;
     top: 40%;
 }
 
@@ -476,7 +476,7 @@ textarea:hover {
     }
 
     .greeting {
-        font-size: 5.5vh;
+        font-size: 4vh;
     }
 
     .hint-to-scroll-down {
