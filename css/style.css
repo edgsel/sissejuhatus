@@ -13,10 +13,29 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+
+}
+
+.dark-theme {
+    width: 100px;
+}
+
+.dark-theme .moon {
+    display: block;
+    width: 1.7vw;
+    text-align: center;
+    margin: 0;
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     list-style-type: none;
     overflow: hidden;
     display: flex;
@@ -37,14 +56,15 @@ body {
 }
 
 .navbar li a {
-    display: block;
+    display: flex;
     color: #111111;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    justify-content: center;
 }
 
-.navbar li a:hover {
+.navbar li .tabs:hover {
     background-color: #111;
     color: #ffffff;
     box-shadow: 1px 1px 1px 0  rgba(0,0,0,0.3);
@@ -142,7 +162,7 @@ body {
 }
 
 .contact-header {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .hint-to-scroll-down {
@@ -160,7 +180,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 15%;
-    color: black;
+    padding-top: 30px;
 }
 
 .grid-cards-container {
@@ -484,15 +504,11 @@ textarea:hover {
     }
 
     .page-header {
-        font-size: 6vh;
+        font-size: 35px;
     }
 
     .contact-text {
         font-size: 2.5vh;
-    }
-
-    .contact-header{
-        padding-top: 40px;
     }
 
     #submit, textarea, input {
@@ -510,5 +526,12 @@ textarea:hover {
 
     .position {
         font-size: 18px;
+    }
+
+    .dark-theme .moon {
+        width: 40%;
+    }
+    .dark-theme {
+        width: 90px;
     }
 }

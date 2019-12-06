@@ -1,5 +1,10 @@
 var textWrapper = document.querySelector('.greeting .letters');
+var body = document.querySelector('body');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x20]|\w)/g, "<span class='letter'>$&</span>");
+//
+// if (!body.classList.contains('dark-mode')) {
+//     textWrapper.classList.add('dark-mode');
+// }
 
 anime.timeline({loop: false})
     .add({
