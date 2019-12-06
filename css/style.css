@@ -14,13 +14,14 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: black;
+    transition: 0.5s;
 }
 
 .dark-mode {
     background-color: #222;
     color: #e6e6e6;
     border-color: #e6e6e6;
-
+    transition: 0.5s;
 }
 
 .dark-theme {
@@ -57,7 +58,7 @@ body {
 
 .navbar li a {
     display: flex;
-    color: #111111;
+    color: inherit;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,7 +69,7 @@ body {
     background-color: #111;
     color: #ffffff;
     box-shadow: 1px 1px 1px 0  rgba(0,0,0,0.3);
-    transition: 0.5s;
+    /*transition: 0.5s;*/
 }
 
 .regbar {
@@ -86,7 +87,7 @@ body {
 
 .regbar li a {
     display: block;
-    color: #111111;
+    color: inherit;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -96,7 +97,7 @@ body {
 .regbar li a:hover {
     background-color: #111;
     color: #ffffff;
-    transition: 0.5s;
+    /*transition: 0.5s;*/
 }
 
 #main-container {
@@ -262,7 +263,7 @@ article:hover {
 }
 
 h2 {
-    color: #111111;
+    color: inherit;
     display: flex;
     position: relative;
     justify-content: center;
@@ -329,34 +330,34 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #111111;
+    color: inherit;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #111111;
+    color: inherit;
     font-size: 0.875em;
 }
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #111111;
+    color: inherit;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #111111;
+    color: inherit;
     font-size: 0.875em;
 }
 
 input:focus::placeholder, textarea::focus:placeholder {
-    color: #111111;
+    color: inherit;
 }
 
 input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #111111;
+    color: inherit;
     font-size: 0.875em;
 }
 
 input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #111111;
+    color: inherit;
 }
 
 /* on hover placeholder */
@@ -410,7 +411,7 @@ input {
     padding: 0 15px 0 15px;
     background: transparent;
     outline: none;
-    color: #111111;
+    color: inherit;
     border: solid 1px #000;
     border-bottom: none;
     transition: all 0.3s ease-in-out;
@@ -453,7 +454,7 @@ textarea:hover {
     padding: 0;
     margin: -5px 0 0 0;
     font-size: 1.5vw;
-    color: #111111;
+    color: inherit;
     outline:none;
     cursor: pointer;
     border: solid 1px #000;
