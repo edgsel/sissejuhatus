@@ -1,9 +1,5 @@
 var textWrapper = document.querySelector('.greeting .letters');
-// var span = document.querySelector('body');
-//
-// if (span.classList.contains('dark-mode')) {
-//     textWrapper.style.color = "#e6e6e6";
-// }
+
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x20]|\w)/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
