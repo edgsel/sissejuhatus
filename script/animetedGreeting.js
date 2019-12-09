@@ -1,10 +1,10 @@
 var textWrapper = document.querySelector('.greeting .letters');
-var body = document.querySelector('body');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x20]|\w)/g, "<span class='letter'>$&</span>");
+// var span = document.querySelector('body');
 //
-// if (!body.classList.contains('dark-mode')) {
-//     textWrapper.classList.add('dark-mode');
+// if (span.classList.contains('dark-mode')) {
+//     textWrapper.style.color = "#e6e6e6";
 // }
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x20]|\w)/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
     .add({
